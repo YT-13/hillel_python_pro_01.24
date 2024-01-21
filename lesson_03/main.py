@@ -9,6 +9,3 @@ def bar():
 def baz():
     pass
 
-
-print("hello")
- 
