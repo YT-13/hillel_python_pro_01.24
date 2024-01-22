@@ -9,3 +9,5 @@ def bar():
 def baz():
     pass
 
+
+print('Hello world')
