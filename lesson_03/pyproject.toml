@@ -26,7 +26,7 @@ line_length = 88  # Максимальна довжина рядка для со
 known_third_party = ["your_library", "another_library"]  # Відомі сторонні бібліотеки
 lines_after_imports = 2  # Кількість порожніх рядків після імпортів
 force_grid_wrap = 0  # Вимушене використання grid wrap (0 для автоматичного визначення)
-use_parentheses = True  # Використовувати дужки для багатострокових імпортів
+
 
 [tool.ruff]
 # Налаштування для ruff (або flake8)
