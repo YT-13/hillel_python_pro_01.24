@@ -1,0 +1,36 @@
+# pyproject.toml
+
+[tool.black]
+# Налаштування для black
+line-length = 88  # Максимальна довжина рядка
+target-version = ['py38']  # Цільова версія Python
+include = '\.pyi?$'  # Включити файли з розширенням .py та .pyi
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''  # Виключити файли та директорії з форматування
+
+[tool.isort]
+# Налаштування для isort
+profile = "black"  # Використовувати профіль, сумісний з black
+line_length = 88  # Максимальна довжина рядка для сортування імпортів
+known_third_party = ["your_library", "another_library"]  # Відомі сторонні бібліотеки
+lines_after_imports = 2  # Кількість порожніх рядків після імпортів
+force_grid_wrap = 0  # Вимушене використання grid wrap (0 для автоматичного визначення)
+
+
+[tool.ruff]
+# Налаштування для ruff (або flake8)
+ignore = ["E203", "E501", "W503"]  # Ігнорувати певні типи помилок
+max-line-length = 88  # Максимальна довжина рядка
+extend-ignore = "E731"  # Ігнорувати певні типи помилок
+
